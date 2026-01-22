@@ -67,8 +67,8 @@
                 </div>
                 <div>
                   <h3 class="font-semibold text-dark-900 mb-2">Email</h3>
-                  <a href="mailto:info@[votresite].ch" class="text-dark-600 hover:text-primary-600 transition-colors">
-                    info@[votresite].ch
+                  <a href="mailto:info@ateliers-esplanade.ch" class="text-dark-600 hover:text-primary-600 transition-colors">
+                    info@ateliers-esplanade.ch
                   </a>
                 </div>
               </div>

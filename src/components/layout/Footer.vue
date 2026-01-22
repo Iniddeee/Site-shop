@@ -94,8 +94,8 @@
             
             <li class="flex items-center space-x-3">
               <Mail :size="18" class="text-primary-400 flex-shrink-0" />
-              <a href="mailto:info@[votresite].ch" class="text-primary-200 hover:text-white transition-colors">
-                info@[votresite].ch
+              <a href="mailto:info@ateliers-esplanade.ch" class="text-primary-200 hover:text-white transition-colors">
+                info@ateliers-esplanade.ch
               </a>
             </li>
             
