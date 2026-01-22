@@ -6,7 +6,7 @@
       </SectionTitle>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Réparation express 20 min -->
+        <!-- Réparation express 1-2h -->
         <div class="bg-white rounded-2xl p-8 border border-light-300 hover:shadow-card-hover transition-all duration-300 text-center group">
           <div class="relative">
             <div class="w-20 h-20 bg-primary-100 rounded-xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -18,16 +18,16 @@
                 Réparation express
               </h3>
               <div class="text-3xl font-title font-bold text-primary-600">
-                20 min
+                1-2h
               </div>
               <p class="text-dark-600 text-sm leading-relaxed">
-                La plupart des réparations effectuées en moins de 20 minutes
+                La plupart des réparations effectuées en 1-2h selon la réparation
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Garantie 2 ans -->
+        <!-- Garantie 6 mois à 1 an -->
         <div class="bg-white rounded-2xl p-8 border border-light-300 hover:shadow-card-hover transition-all duration-300 text-center group">
           <div class="relative">
             <div class="w-20 h-20 bg-primary-100 rounded-xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -39,10 +39,10 @@
                 Garantie
               </h3>
               <div class="text-3xl font-title font-bold text-primary-600">
-                2 ans
+                6 mois à 1 an
               </div>
               <p class="text-dark-600 text-sm leading-relaxed">
-                Toutes nos réparations sont garanties pièces et main d'œuvre
+                Selon les pièces changées, garantie pièces et main d'œuvre
               </p>
             </div>
           </div>

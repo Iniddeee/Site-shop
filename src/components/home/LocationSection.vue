@@ -67,10 +67,12 @@
                 </div>
                 <div>
                   <h3 class="font-semibold text-dark-900 mb-1">Horaires d'ouverture</h3>
-                  <div class="text-dark-600">
-                    <div>Lundi - Vendredi: 10h - 18h30</div>
-                    <div>Samedi: 10h - 17h</div>
-                    <div class="text-dark-700">Dimanche: Fermé</div>
+                  <div class="text-dark-600 space-y-1">
+                    <div>Lundi - Mercredi: 8h - 18h30</div>
+                    <div>Jeudi: 8h - 20h</div>
+                    <div>Vendredi: 8h - 18h30</div>
+                    <div>Samedi: 8h - 17h</div>
+                    <div class="text-dark-500">Dimanche: Fermé</div>
                   </div>
                 </div>
               </div>
@@ -83,7 +85,6 @@
                 <div>
                   <h3 class="font-semibold text-dark-900 mb-1">Accès</h3>
                   <div class="text-dark-600">
-                    <div>Parking gratuit disponible</div>
                     <div>Transports publics à proximité</div>
                   </div>
                 </div>

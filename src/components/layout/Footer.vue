@@ -10,7 +10,7 @@
             </div>
             <div>
               <span class="text-2xl font-title font-bold text-white">
-                Repair<span class="text-primary-400">Tech</span>
+                Atelier de l'<span class="text-primary-400">Esplanade</span>
               </span>
               <div class="text-sm text-primary-300 -mt-1">Porrentruy</div>
             </div>
@@ -18,7 +18,7 @@
           
           <p class="text-primary-200 text-sm leading-relaxed">
             Service de réparation professionnel pour smartphones, tablettes et ordinateurs. 
-            Pièces de qualité, garantie 2 ans.
+            Pièces de qualité, garantie 6 mois à 1 an selon les pièces.
           </p>
         </div>
 
@@ -101,10 +101,12 @@
             
             <li class="flex items-start space-x-3">
               <Clock :size="18" class="text-primary-400 flex-shrink-0 mt-1" />
-              <div class="text-primary-200 text-sm">
-                <div>Lu-Ve: 10h-18h30</div>
-                <div>Sa: 10h-17h</div>
-                <div class="text-primary-300">Dimanche fermé</div>
+              <div class="text-primary-300 space-y-1">
+                <div>Lundi - Mercredi: 8h - 18h30</div>
+                <div>Jeudi: 8h - 20h</div>
+                <div>Vendredi: 8h - 18h30</div>
+                <div>Samedi: 8h - 17h</div>
+                <div class="text-primary-400">Dimanche fermé</div>
               </div>
             </li>
           </ul>
@@ -116,7 +118,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div class="text-center md:text-left">
             <p class="text-primary-300 text-sm">
-              &copy; {{ currentYear }} RepairTech Porrentruy. Tous droits réservés.
+              &copy; {{ currentYear }} Atelier de l'Esplanade Porrentruy. Tous droits réservés.
             </p>
             <p class="text-primary-400 text-xs mt-1">
               Développé par Zakaria Eddini

@@ -6,7 +6,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomeView,
-    meta: { title: 'Réparation Smartphone Porrentruy - Service Express & Garantie 2 ans' }
+    meta: { title: 'Réparation Smartphone Porrentruy - Service Express & Garantie 6 mois à 1 an' }
   },
   {
     path: '/shop',
@@ -49,6 +49,48 @@ const routes = [
     name: 'About',
     component: () => import('../views/AboutView.vue'),
     meta: { title: 'À propos - Qui sommes-nous' }
+  },
+  {
+    path: '/cordonnerie',
+    name: 'Cordonnerie',
+    component: () => import('../views/CordonnerieView.vue'),
+    meta: { title: 'Cordonnerie - Tous nos services' }
+  },
+  {
+    path: '/cordonnerie/chaussures',
+    name: 'CordonnerieChaussures',
+    component: () => import('../views/CordonnerieChaussuresView.vue'),
+    meta: { title: 'Réparation Chaussures - Cordonnerie' }
+  },
+  {
+    path: '/cordonnerie/maroquinerie',
+    name: 'CordonnerieMaroquinerie',
+    component: () => import('../views/CordonnerieMaroquinerieView.vue'),
+    meta: { title: 'Sacs & Maroquinerie - Cordonnerie' }
+  },
+  {
+    path: '/cordonnerie/cles',
+    name: 'CordonnerieCles',
+    component: () => import('../views/CordonnerieClesView.vue'),
+    meta: { title: 'Clés & Télécommandes - Cordonnerie' }
+  },
+  {
+    path: '/cordonnerie/entretien',
+    name: 'CordonnerieEntretien',
+    component: () => import('../views/CordonnerieEntretienView.vue'),
+    meta: { title: 'Entretien Cuir - Cordonnerie' }
+  },
+  {
+    path: '/shop/smartphones',
+    name: 'ShopSmartphones',
+    component: () => import('../views/ShopSmartphonesView.vue'),
+    meta: { title: 'Shop Smartphone - Réparations et accessoires' }
+  },
+  {
+    path: '/shop/cordonnerie',
+    name: 'ShopCordonnerie',
+    component: () => import('../views/ShopCordonnerieView.vue'),
+    meta: { title: 'Shop Cordonnerie - Tous les services' }
   }
 ]
 

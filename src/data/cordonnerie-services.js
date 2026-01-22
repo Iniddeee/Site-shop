@@ -1,0 +1,490 @@
+export const cordonnerieServices = [
+  // === CHAUSSURES - RESSEMELAGE ===
+  {
+    id: 'ressemelage-homme',
+    category: 'chaussures',
+    subcategory: 'ressemelage',
+    name: 'Ressemelage Chaussures Homme',
+    description: 'Remplacement complet de la semelle pour chaussures de ville homme',
+    price: 45.00,
+    priceRange: '45 - 75',
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '2-3 jours',
+    popular: true
+  },
+  {
+    id: 'ressemelage-femme',
+    category: 'chaussures',
+    subcategory: 'ressemelage',
+    name: 'Ressemelage Chaussures Femme',
+    description: 'Remplacement complet de la semelle pour escarpins, bottines',
+    price: 40.00,
+    priceRange: '40 - 70',
+    image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+  {
+    id: 'ressemelage-sneakers',
+    category: 'chaussures',
+    subcategory: 'ressemelage',
+    name: 'Ressemelage Sneakers',
+    description: 'Remplacement semelle baskets et sneakers',
+    price: 55.00,
+    image: 'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop',
+    duration: '3-5 jours',
+    popular: true
+  },
+  {
+    id: 'ressemelage-bottes',
+    category: 'chaussures',
+    subcategory: 'ressemelage',
+    name: 'Ressemelage Bottes',
+    description: 'Remplacement semelle bottes et bottines',
+    price: 50.00,
+    priceRange: '50 - 80',
+    image: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400&h=400&fit=crop',
+    duration: '3-4 jours'
+  },
+  {
+    id: 'demi-semelle',
+    category: 'chaussures',
+    subcategory: 'ressemelage',
+    name: 'Demi-Semelle',
+    description: 'Remplacement avant-pied uniquement',
+    price: 30.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '1-2 jours'
+  },
+  {
+    id: 'semelle-antiderapante',
+    category: 'chaussures',
+    subcategory: 'ressemelage',
+    name: 'Semelle Antidérapante',
+    description: 'Pose de semelle avec grip renforcé',
+    price: 35.00,
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+
+  // === CHAUSSURES - TALONS ===
+  {
+    id: 'talons-classiques',
+    category: 'chaussures',
+    subcategory: 'talons',
+    name: 'Remplacement Talons Classiques',
+    description: 'Changement de talons usés - hauteur standard',
+    price: 15.00,
+    priceRange: '15 - 25',
+    image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop',
+    duration: 'Express 30 min',
+    popular: true
+  },
+  {
+    id: 'talons-aiguilles',
+    category: 'chaussures',
+    subcategory: 'talons',
+    name: 'Remplacement Talons Aiguilles',
+    description: 'Changement de talons fins pour escarpins',
+    price: 12.00,
+    image: 'https://images.unsplash.com/photo-1596702962488-e45e8b73d4d6?w=400&h=400&fit=crop',
+    duration: 'Express 20 min'
+  },
+  {
+    id: 'patins-protection',
+    category: 'chaussures',
+    subcategory: 'talons',
+    name: 'Pose Patins de Protection',
+    description: 'Protection anti-usure pour semelles neuves',
+    price: 25.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: 'Express 30 min'
+  },
+  {
+    id: 'rehaussement-talons',
+    category: 'chaussures',
+    subcategory: 'talons',
+    name: 'Rehaussement de Talons',
+    description: 'Augmentation de la hauteur des talons',
+    price: 35.00,
+    image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+  {
+    id: 'talons-compensees',
+    category: 'chaussures',
+    subcategory: 'talons',
+    name: 'Réparation Talons Compensés',
+    description: 'Réparation ou remplacement talons compensés',
+    price: 40.00,
+    image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop',
+    duration: '3-4 jours'
+  },
+
+  // === CHAUSSURES - COUTURES ===
+  {
+    id: 'couture-chaussure',
+    category: 'chaussures',
+    subcategory: 'coutures',
+    name: 'Couture & Recouture',
+    description: 'Réparation coutures décousues, renfort',
+    price: 18.00,
+    priceRange: '18 - 35',
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '1-2 jours'
+  },
+  {
+    id: 'collage-semelle',
+    category: 'chaussures',
+    subcategory: 'coutures',
+    name: 'Collage Semelle Décollée',
+    description: 'Recollage professionnel de semelles',
+    price: 15.00,
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop',
+    duration: 'Express 1h'
+  },
+  {
+    id: 'reparation-fermeture-chaussure',
+    category: 'chaussures',
+    subcategory: 'coutures',
+    name: 'Réparation Fermeture Éclair',
+    description: 'Changement ou réparation zip sur chaussures/bottes',
+    price: 25.00,
+    image: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+  {
+    id: 'elastique-chaussure',
+    category: 'chaussures',
+    subcategory: 'coutures',
+    name: 'Changement Élastiques',
+    description: 'Remplacement élastiques usés',
+    price: 12.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '1-2 jours'
+  },
+
+  // === CHAUSSURES - NETTOYAGE ===
+  {
+    id: 'nettoyage-cuir',
+    category: 'chaussures',
+    subcategory: 'nettoyage',
+    name: 'Nettoyage & Cirage Cuir',
+    description: 'Nettoyage complet et cirage professionnel',
+    price: 20.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: 'Express 30 min'
+  },
+  {
+    id: 'teinture-chaussures',
+    category: 'chaussures',
+    subcategory: 'nettoyage',
+    name: 'Teinture Chaussures',
+    description: 'Changement de couleur ou ravivage',
+    price: 35.00,
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+  {
+    id: 'detachage-cuir',
+    category: 'chaussures',
+    subcategory: 'nettoyage',
+    name: 'Détachage Cuir',
+    description: 'Élimination des taches sur cuir',
+    price: 25.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '1-2 jours'
+  },
+
+  // === MAROQUINERIE - SACS ===
+  {
+    id: 'reparation-sac-cuir',
+    category: 'maroquinerie',
+    subcategory: 'sacs',
+    name: 'Réparation Sac Cuir',
+    description: 'Coutures, anses, fermetures pour sacs en cuir',
+    price: 35.00,
+    priceRange: '35 - 80',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=400&fit=crop',
+    duration: '3-5 jours',
+    popular: true
+  },
+  {
+    id: 'changement-fermeture-sac',
+    category: 'maroquinerie',
+    subcategory: 'sacs',
+    name: 'Changement Fermeture Éclair Sac',
+    description: 'Remplacement zip cassé sur sac',
+    price: 30.00,
+    priceRange: '30 - 50',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+  {
+    id: 'reparation-anse-sac',
+    category: 'maroquinerie',
+    subcategory: 'sacs',
+    name: 'Réparation Anse de Sac',
+    description: 'Réparation ou remplacement anses',
+    price: 25.00,
+    priceRange: '25 - 60',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=400&fit=crop',
+    duration: '2-4 jours'
+  },
+  {
+    id: 'doublure-sac',
+    category: 'maroquinerie',
+    subcategory: 'sacs',
+    name: 'Changement Doublure Sac',
+    description: 'Remplacement doublure intérieure',
+    price: 45.00,
+    priceRange: '45 - 90',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=400&fit=crop',
+    duration: '4-6 jours'
+  },
+  {
+    id: 'nettoyage-sac',
+    category: 'maroquinerie',
+    subcategory: 'sacs',
+    name: 'Nettoyage Sac Cuir',
+    description: 'Nettoyage et entretien complet',
+    price: 30.00,
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+
+  // === MAROQUINERIE - CEINTURES ===
+  {
+    id: 'ceinture-raccourcir',
+    category: 'maroquinerie',
+    subcategory: 'ceintures',
+    name: 'Raccourcir Ceinture',
+    description: 'Ajustement longueur de ceinture',
+    price: 12.00,
+    image: 'https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=400&h=400&fit=crop',
+    duration: 'Express 15 min'
+  },
+  {
+    id: 'ceinture-changer-boucle',
+    category: 'maroquinerie',
+    subcategory: 'ceintures',
+    name: 'Changement Boucle Ceinture',
+    description: 'Remplacement de la boucle',
+    price: 15.00,
+    priceRange: '15 - 30',
+    image: 'https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=400&h=400&fit=crop',
+    duration: 'Express 20 min'
+  },
+  {
+    id: 'ceinture-nouveau-trou',
+    category: 'maroquinerie',
+    subcategory: 'ceintures',
+    name: 'Ajout Trou Ceinture',
+    description: 'Perçage de nouveaux trous',
+    price: 5.00,
+    image: 'https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=400&h=400&fit=crop',
+    duration: 'Express 5 min'
+  },
+
+  // === MAROQUINERIE - PORTEFEUILLES ===
+  {
+    id: 'reparation-portefeuille',
+    category: 'maroquinerie',
+    subcategory: 'portefeuilles',
+    name: 'Réparation Portefeuille',
+    description: 'Coutures, fermetures, renfort',
+    price: 20.00,
+    priceRange: '20 - 40',
+    image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+  {
+    id: 'changement-pression',
+    category: 'maroquinerie',
+    subcategory: 'portefeuilles',
+    name: 'Changement Pression/Bouton',
+    description: 'Remplacement pressions ou boutons',
+    price: 8.00,
+    image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&h=400&fit=crop',
+    duration: 'Express 15 min'
+  },
+  {
+    id: 'porte-carte-reparation',
+    category: 'maroquinerie',
+    subcategory: 'portefeuilles',
+    name: 'Réparation Porte-Cartes',
+    description: 'Réparation fentes et coutures',
+    price: 15.00,
+    image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&h=400&fit=crop',
+    duration: '1-2 jours'
+  },
+  {
+    id: 'etui-cuir',
+    category: 'maroquinerie',
+    subcategory: 'portefeuilles',
+    name: 'Réparation Étui Cuir',
+    description: 'Réparation étuis lunettes, téléphone',
+    price: 18.00,
+    image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&h=400&fit=crop',
+    duration: '2-3 jours'
+  },
+
+  // === CLÉS - STANDARD ===
+  {
+    id: 'cle-standard',
+    category: 'cles',
+    subcategory: 'cles-standard',
+    name: 'Reproduction Clé Standard',
+    description: 'Double de clé plate classique',
+    price: 5.00,
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: 'Express 5 min',
+    popular: true
+  },
+  {
+    id: 'cle-crantee',
+    category: 'cles',
+    subcategory: 'cles-standard',
+    name: 'Reproduction Clé Crantée',
+    description: 'Double de clé avec crans',
+    price: 8.00,
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: 'Express 10 min'
+  },
+  {
+    id: 'badge-immeuble',
+    category: 'cles',
+    subcategory: 'cles-standard',
+    name: 'Copie Badge Immeuble',
+    description: 'Duplication badge accès (si autorisé)',
+    price: 15.00,
+    image: 'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=400&h=400&fit=crop',
+    duration: 'Express 10 min'
+  },
+
+  // === CLÉS - SÉCURISÉES ===
+  {
+    id: 'cle-securisee',
+    category: 'cles',
+    subcategory: 'cles-securisees',
+    name: 'Reproduction Clé Sécurisée',
+    description: 'Double de clé avec carte de propriété',
+    price: 25.00,
+    priceRange: '25 - 60',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: '24-48h'
+  },
+  {
+    id: 'cle-pompe',
+    category: 'cles',
+    subcategory: 'cles-securisees',
+    name: 'Reproduction Clé Pompe',
+    description: 'Double de clé haute sécurité',
+    price: 35.00,
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: '48-72h'
+  },
+  {
+    id: 'cle-coffre',
+    category: 'cles',
+    subcategory: 'cles-securisees',
+    name: 'Clé de Coffre-Fort',
+    description: 'Reproduction clé coffre (avec justificatif)',
+    price: 40.00,
+    priceRange: '40 - 80',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: 'Sur devis'
+  },
+
+  // === CLÉS - TÉLÉCOMMANDES ===
+  {
+    id: 'cle-voiture',
+    category: 'cles',
+    subcategory: 'telecommandes',
+    name: 'Clé Voiture avec Télécommande',
+    description: 'Reproduction clé auto avec programmation',
+    price: 80.00,
+    priceRange: '80 - 200',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: 'Sur devis',
+    popular: true
+  },
+  {
+    id: 'pile-telecommande',
+    category: 'cles',
+    subcategory: 'telecommandes',
+    name: 'Changement Pile Télécommande',
+    description: 'Remplacement pile clé auto/portail',
+    price: 8.00,
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: 'Express 5 min'
+  },
+  {
+    id: 'telecommande-portail',
+    category: 'cles',
+    subcategory: 'telecommandes',
+    name: 'Télécommande Portail/Garage',
+    description: 'Programmation télécommande portail',
+    price: 35.00,
+    priceRange: '35 - 70',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: 'Express 15 min'
+  },
+  {
+    id: 'coque-cle-voiture',
+    category: 'cles',
+    subcategory: 'telecommandes',
+    name: 'Changement Coque Clé Voiture',
+    description: 'Remplacement coque cassée',
+    price: 25.00,
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+    duration: 'Express 20 min'
+  },
+
+  // === ENTRETIEN ===
+  {
+    id: 'entretien-cuir-complet',
+    category: 'entretien',
+    name: 'Entretien Cuir Complet',
+    description: 'Nettoyage, nourrissage et protection cuir',
+    price: 30.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '1-2 jours'
+  },
+  {
+    id: 'impermeabilisation',
+    category: 'entretien',
+    name: 'Imperméabilisation',
+    description: 'Traitement waterproof chaussures/sacs',
+    price: 15.00,
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop',
+    duration: 'Express 30 min'
+  },
+  {
+    id: 'cirage-luxe',
+    category: 'entretien',
+    name: 'Cirage de Luxe',
+    description: 'Cirage miroir professionnel',
+    price: 25.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: 'Express 45 min'
+  },
+  {
+    id: 'renovation-cuir',
+    category: 'entretien',
+    name: 'Rénovation Cuir Abîmé',
+    description: 'Restauration cuir craquelé ou décoloré',
+    price: 50.00,
+    priceRange: '50 - 100',
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '3-5 jours'
+  },
+  {
+    id: 'traitement-anti-moisissure',
+    category: 'entretien',
+    name: 'Traitement Anti-Moisissure',
+    description: 'Nettoyage et traitement préventif',
+    price: 20.00,
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop',
+    duration: '1-2 jours'
+  }
+];

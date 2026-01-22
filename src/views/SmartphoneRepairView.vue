@@ -17,7 +17,7 @@
             Réparation <span class="text-primary-600">Smartphone</span>
           </h1>
           <p class="text-xl text-dark-700 max-w-2xl mx-auto">
-            Toutes marques réparées - Pièces d'origine - Garantie 2 ans
+            Toutes marques réparées - Pièces d'origine - Garantie 6 mois à 1 an
           </p>
         </div>
       </div>

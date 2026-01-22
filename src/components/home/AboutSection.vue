@@ -30,7 +30,7 @@
               </p>
               
               <p>
-                Réparation express en 20 minutes pour la plupart des interventions. 
+                Réparation express en 1-2h selon la réparation pour la plupart des interventions. 
                 Diagnostic gratuit et devis transparent.
               </p>
             </div>

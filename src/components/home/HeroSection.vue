@@ -23,6 +23,9 @@
               Réparation smartphone 
               <span class="text-primary-600">Porrentruy</span>
             </h1>
+            <p class="text-lg text-primary-600 font-medium mt-2">
+              Atelier de l'Esplanade
+            </p>
             <p class="text-xl sm:text-2xl text-dark-700 font-medium">
               sans perte de données
             </p>
@@ -31,7 +34,7 @@
           <!-- Description -->
           <p class="text-lg text-dark-600 leading-relaxed max-w-2xl">
             Service de réparation express pour smartphones, tablettes et ordinateurs. 
-            Pièces d'origine, garantie 2 ans, intervention en 20 minutes.
+            Pièces d'origine, garantie 6 mois à 1 an, intervention en 1-2h selon la réparation.
           </p>
 
           <!-- Boutons CTA -->
@@ -59,11 +62,11 @@
           <div class="flex flex-wrap gap-6 pt-4">
             <div class="flex items-center space-x-2">
               <CheckCircle2 :size="20" class="text-primary-600" />
-              <span class="text-dark-700">Réparation 20 min</span>
+              <span class="text-dark-700">Réparation 1-2h</span>
             </div>
             <div class="flex items-center space-x-2">
               <CheckCircle2 :size="20" class="text-primary-600" />
-              <span class="text-dark-700">Garantie 2 ans</span>
+              <span class="text-dark-700">Garantie 6 mois à 1 an</span>
             </div>
             <div class="flex items-center space-x-2">
               <CheckCircle2 :size="20" class="text-primary-600" />

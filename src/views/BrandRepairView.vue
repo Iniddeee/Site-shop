@@ -17,7 +17,7 @@
             Réparation <span class="text-primary-600">{{ brandName }}</span>
           </h1>
           <p class="text-xl text-dark-700 max-w-2xl mx-auto">
-            Service express - Pièces d'origine - Garantie 2 ans
+            Service express - Pièces d'origine - Garantie 6 mois à 1 an
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@
                     Réparation {{ brandName }} {{ currentModel?.name }}
                   </h2>
                   <p class="text-dark-600">
-                    La plupart des réparations sont réalisées en 20 minutes
+                    La plupart des réparations sont réalisées en 1-2h selon la réparation
                   </p>
                 </div>
 
@@ -114,13 +114,13 @@
                       <Shield :size="24" class="text-white" />
                     </div>
                     <div>
-                      <h3 class="font-semibold text-dark-900">Garantie 2 ans</h3>
+                      <h3 class="font-semibold text-dark-900">Garantie 6 mois à 1 an</h3>
                       <p class="text-dark-600 text-sm">
-                        Toutes nos réparations sont garanties pièces et main d'œuvre
+                        Selon les pièces changées, garantie pièces et main d'œuvre
                       </p>
                       <div class="space-y-1 mt-2 text-xs text-dark-600">
-                        <div>Lu-Ve: 10h-18h30</div>
-                        <div>Sa: 10h-17h</div>
+                        <div>Lu-Ve: 8h-18h30</div>
+                        <div>Sa: 8h-17h</div>
                         <div class="text-dark-500">Dimanche: Fermé</div>
                         <div class="mt-2">Fbg Saint-Germain 2, 2900 Porrentruy</div>
                       </div>

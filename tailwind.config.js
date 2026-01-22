@@ -35,12 +35,25 @@ export default {
           800: '#1E293B',
           900: '#0F172A',
         },
-        // Accent (pour CTA importants)
+        // Marron/Cuir (cordonnerie)
+        leather: {
+          50: '#FEFDFB',
+          100: '#FDF6E9',
+          200: '#F5E6D3',
+          300: '#E6CEB0',
+          400: '#C9A66B',
+          500: '#A67C4E',
+          600: '#8B5E34',
+          700: '#6F4726',
+          800: '#5A3A1E',
+          900: '#3D2814',
+        },
+        // Accent (vert pour "Express", "Rapide")
         accent: {
-          400: '#FBBF24',
-          500: '#F59E0B',
-          600: '#D97706',
-          700: '#B45309',
+          400: '#34D399',
+          500: '#10B981',
+          600: '#059669',
+          700: '#047857',
         },
       },
       fontFamily: {

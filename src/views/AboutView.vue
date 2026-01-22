@@ -198,7 +198,7 @@
           <div class="flex items-start space-x-4 bg-light-100 p-6 rounded-xl border border-light-300">
             <CheckCircle2 :size="24" class="text-primary-600 flex-shrink-0 mt-1" />
             <div>
-              <h4 class="font-bold text-dark-900 mb-1">Garantie 2 ans</h4>
+              <h4 class="font-bold text-dark-900 mb-1">Garantie 6 mois à 1 an</h4>
               <p class="text-dark-600">Ut enim ad minim veniam quis nostrud exercitation</p>
             </div>
           </div>

@@ -14,7 +14,7 @@
           </div>
           <div class="hidden sm:block">
             <span class="text-xl font-title font-bold text-dark-900">
-              Repair<span class="text-primary-600">Tech</span>
+              Atelier de l'<span class="text-primary-600">Esplanade</span>
             </span>
             <div class="text-xs text-dark-600 -mt-1">Porrentruy</div>
           </div>
@@ -29,6 +29,60 @@
           >
             Accueil
           </router-link>
+
+          <!-- Dropdown Smartphones -->
+          <div class="relative" @mouseenter="smartphonesOpen = true" @mouseleave="smartphonesOpen = false">
+            <button class="flex items-center space-x-1 text-dark-700 hover:text-primary-600 font-medium transition-colors">
+              <span>Smartphones</span>
+              <ChevronDown :size="16" :class="{ 'rotate-180': smartphonesOpen }" class="transition-transform" />
+            </button>
+            <Transition name="dropdown">
+              <div v-if="smartphonesOpen" class="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-card border border-light-300 py-2">
+                <router-link to="/reparation/smartphones" class="block px-4 py-2 text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                  Toutes marques
+                </router-link>
+                <router-link to="/reparation/smartphones/iphone" class="block px-4 py-2 text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                  Réparation iPhone
+                </router-link>
+                <router-link to="/reparation/smartphones/samsung" class="block px-4 py-2 text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                  Réparation Samsung
+                </router-link>
+                <router-link to="/reparation/tablettes" class="block px-4 py-2 text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                  Réparation Tablettes
+                </router-link>
+                <router-link to="/reparation/ordinateurs" class="block px-4 py-2 text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                  Réparation Ordinateurs
+                </router-link>
+              </div>
+            </Transition>
+          </div>
+
+          <!-- Dropdown Cordonnerie -->
+          <div class="relative" @mouseenter="cordonnerieOpen = true" @mouseleave="cordonnerieOpen = false">
+            <button class="flex items-center space-x-1 text-dark-700 hover:text-leather-600 font-medium transition-colors">
+              <span>Cordonnerie</span>
+              <ChevronDown :size="16" :class="{ 'rotate-180': cordonnerieOpen }" class="transition-transform" />
+            </button>
+            <Transition name="dropdown">
+              <div v-if="cordonnerieOpen" class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-card border border-light-300 py-2">
+                <router-link to="/cordonnerie" class="block px-4 py-2 text-dark-700 hover:bg-leather-50 hover:text-leather-600 transition-colors">
+                  Tous les services
+                </router-link>
+                <router-link to="/cordonnerie/chaussures" class="block px-4 py-2 text-dark-700 hover:bg-leather-50 hover:text-leather-600 transition-colors">
+                  Réparation Chaussures
+                </router-link>
+                <router-link to="/cordonnerie/maroquinerie" class="block px-4 py-2 text-dark-700 hover:bg-leather-50 hover:text-leather-600 transition-colors">
+                  Sacs & Maroquinerie
+                </router-link>
+                <router-link to="/cordonnerie/cles" class="block px-4 py-2 text-dark-700 hover:bg-leather-50 hover:text-leather-600 transition-colors">
+                  Clés & Télécommandes
+                </router-link>
+                <router-link to="/cordonnerie/entretien" class="block px-4 py-2 text-dark-700 hover:bg-leather-50 hover:text-leather-600 transition-colors">
+                  Entretien Cuir
+                </router-link>
+              </div>
+            </Transition>
+          </div>
 
           <router-link 
             to="/shop" 
@@ -98,12 +152,15 @@ import {
   Phone, 
   Menu, 
   X,
-  ShoppingCart
+  ShoppingCart,
+  ChevronDown
 } from 'lucide-vue-next'
 import MobileMenu from './MobileMenu.vue'
 
 const isScrolled = ref(false)
 const mobileMenuOpen = ref(false)
+const smartphonesOpen = ref(false)
+const cordonnerieOpen = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
